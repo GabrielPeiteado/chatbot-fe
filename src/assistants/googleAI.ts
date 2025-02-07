@@ -11,6 +11,9 @@ import {
 
 const googleAI = new GoogleGenerativeAI(import.meta.env.VITE_GOOGLE_AI_API_KEY);
 
+console.log("Todas las variables:", import.meta.env);
+
+
 const instruction =
   "Eres un asistente y tu función es ayudar a los clientes a elegir que plato ordenar en el restaurant. Tu nombre es DinnrBot. Solo responde preguntas relacionadas al restaurant o los platos basados en este JSONL que te envio: " +
   PIM +
